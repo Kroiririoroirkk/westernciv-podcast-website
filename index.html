@@ -12,6 +12,11 @@
         text-align: center;
         border-bottom: 0.2em solid black;
       }
+      header::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
       h1 {
         color: #534A30;
         font: bold 3em Bodoni, Minion, serif;
@@ -34,6 +39,11 @@
         color: black;
         font: 1em Palatino, Baskerville, serif;
       }
+      .video ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
   <body>
@@ -44,50 +54,58 @@
     <article>
       <h2>Podcast Episode #1:</h2>
       <h3>Medieval Music</h3>
-      <div style="float:right; display: inline-block;">
-        <video width="320" height="240" controls>
-          <source src="podcast.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div onclick="if (document.getElementById('transcript1').style.display == 'none') {document.getElementById('transcript1').style.display = 'block';} else {document.getElementById('transcript1').style.display = 'none';}" style="background-color: #5C2E10; color: #AFAFAF; border-radius: 0.5em; margin-top: 2em; padding: 1em; display: inline-block;">Show/Hide Transcript</div>
-        <div id="transcript1" style="display:none;">
-          <p>Eric: Welcome listeners to Swords and Spears. I’m Eric, and we have a very special guest today. He’s an expert in the Middle Ages, and he’ll be talking today about Medieval music. His name is Adam!</p>
-          <p>Adam: Thank you for having me on your podcast.</p>
-          <p>Eric: All Right. So, Adam, what kind of instruments did they use during the Medieval Period?</p>
-          <p>Adam: So during the Medieval Period, there was a very wide variety of differently used instruments, one of them being the organetto, which was a small, portable set of playable organs. They were pumped and played by the same person. Next, we have the psaltery, which was a wooden slab with strings running vertically. These strings were usually plucked by hand.</p>
-          <p>Eric: Like with a guitar?</p>
-          <p>Adam: Uh, yeah, pretty much. Only, it didn’t have a neck, just a wooden slab with strings attached. Next, we have the dulcimer, which was very reminiscent to the psaltery, only it is laid down usually in your lap and played with two plucking sticks.</p>
-          <p>Eric: What exactly is a plucking stick?</p>
-          <p>Adam: Pretty much just a wooden, carved out—it looked like a fang kind of. I mean, all you would do is just pluck, pluck the strings with it.</p>
-          <p>Eric: Like a saw?</p>
-          <p>Adam: Yeah, pretty much. Next we have the rebec, which was pretty much just a baby violin, or a viol, as it was called at the time. It only had three strings, which were played with a small bow.</p>
-          <p>Eric: Did they also use stuff like lutes and harps?</p>
-          <p>Adam: Yeah, they did. They were widely used actually, and they were very—they didn’t change much as they are today as they were back then.</p>
-          <p>Eric: All right, so what kind of music did they play during the Medieval Period? What genres were there?</p>
-          <p>Adam: So, a very popular genre was called secular. What secular pretty much meant was non-religious. And that consisted of ballads such as heroic tales, romance tales, Arabian and Persian love songs, lyric poetry and song, things like that. And of course, dancing influenced music as well. Things such as line dancing and circle dancing were very popular at the time. And off course, religion was very—a very influential factor of music at the time. Of course, we have Christianity and Islam rising, and Christian music was—usually consisted of lyrical singing, as instruments were banned from Church music.</p>
-          <p>Eric: So just singing.</p>
-          <p>Adam: Yeah.</p>
-          <p>Eric: So how exactly was music notated?</p>
-          <p>Adam: So music—oh, here, I have a visual representation of a—</p>
-          <p>Eric: Thank you.</p>
-          <p>Adam: Yeah, there you go. So, as they are today, music was notated on, of course, paper, only back then, they were called neumes, and if you look at the paper, or the sheet, or the neume, I should say, you can really tell the differences.</p>
-          <p>Eric: So the things I notice right away is that there aren’t really any stems. There’s not really any kind of rhythm. They’re all like—</p>
-          <p>Adam: It’s all over the place, isn’t it?</p>
-          <p>Eric: Yeah, and there are only four lines instead of five.</p>
-          <p>Adam: So, yeah, again they were notated on a sheet called a neume.</p>
-          <p>Eric: So, how was music performed then?</p>
-          <p>Adam: So, music was performed, during the 15th century, usually in small groups, and these groups consisted of, usually three to five people in a small room playing either a harp, lute, or recorder, or whatever instrument was being played, in small outside bands, usually playing in front of a, you know, in towns and stuff like that. And of course you had music being played at weddings and things like that. Dance. You also had backup dancers accompanying bands and things like that. Next question?</p>
-          <p>Eric: All right. So, how did Medieval style music come to be?</p>
-          <p>Adam: Well, it’s very uncertain how it came to be. A lot of people say that it was very—well, it derived from Roman music in the 5th century. So, early medieval music, you can really—</p>
-          <p>Eric: So that’s when the Roman Empire fell?</p>
-          <p>Adam: Yeah, early 5th century Medieval music, you can really see that, or you can sense that influence of Roman culture in the music. And in the 8th and 10th centuries, Gregorian chanting, which was music organized by Pope Gregory I, was very popular at the time. It was also called plainsong, which because there was literally no music—or no musical instruments in the composition of the music. Parallel melodies develop, things like that. In the 11th to 13th centuries, of course we have the Crusades going on during this time, so they heavily influenced music. What they did, they brought back Eastern musical ideas.</p>
-          <p>Eric: Like Eastern songs?</p>
-          <p>Adam: Yeah. In the 12th century, we had polyphony, which meant independent melodies, and secular songs spread across Europe.</p>
-          <p>Eric: So this was going on during the Crusades?</p>
-          <p>Adam: Yeah. We also had troubadours, or trouveres, which were professional secular musicians, so composers and things like that. And of course, we had ars nova, which was—came right after ars antiqua, and ars nova just translates to “New Art.” It was a very distinct type of music at the time, and it developed into the Renaissance music.</p>
-          <p>Eric: All right. I’m Eric, and that was Adam. Thank you for listening to Swords and Spears! Be sure to tune in next week, where we’ll talk about Medieval weapons and battles.</p>
-          <p>Adam: Oh, thank you for having me on.</p>
-        </div>
+      <div style="float:right;" class="video">
+        <ul>
+          <li>
+            <video width="320" height="240" controls>
+              <source src="podcast.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </li>
+          <li>
+            <div onclick="if (document.getElementById('transcript1').style.display == 'none') {document.getElementById('transcript1').style.display = 'block';} else {document.getElementById('transcript1').style.display = 'none';}" style="background-color: #5C2E10; color: #AFAFAF; border-radius: 0.5em; margin-top: 2em; padding: 1em;">
+              Show/Hide Transcript
+            </div>
+          </li>
+          <li id="transcript1" style="display:none;">
+            <p>Eric: Welcome listeners to Swords and Spears. I’m Eric, and we have a very special guest today. He’s an expert in the Middle Ages, and he’ll be talking today about Medieval music. His name is Adam!</p>
+            <p>Adam: Thank you for having me on your podcast.</p>
+            <p>Eric: All Right. So, Adam, what kind of instruments did they use during the Medieval Period?</p>
+            <p>Adam: So during the Medieval Period, there was a very wide variety of differently used instruments, one of them being the organetto, which was a small, portable set of playable organs. They were pumped and played by the same person. Next, we have the psaltery, which was a wooden slab with strings running vertically. These strings were usually plucked by hand.</p>
+            <p>Eric: Like with a guitar?</p>
+            <p>Adam: Uh, yeah, pretty much. Only, it didn’t have a neck, just a wooden slab with strings attached. Next, we have the dulcimer, which was very reminiscent to the psaltery, only it is laid down usually in your lap and played with two plucking sticks.</p>
+            <p>Eric: What exactly is a plucking stick?</p>
+            <p>Adam: Pretty much just a wooden, carved out—it looked like a fang kind of. I mean, all you would do is just pluck, pluck the strings with it.</p>
+            <p>Eric: Like a saw?</p>
+            <p>Adam: Yeah, pretty much. Next we have the rebec, which was pretty much just a baby violin, or a viol, as it was called at the time. It only had three strings, which were played with a small bow.</p>
+            <p>Eric: Did they also use stuff like lutes and harps?</p>
+            <p>Adam: Yeah, they did. They were widely used actually, and they were very—they didn’t change much as they are today as they were back then.</p>
+            <p>Eric: All right, so what kind of music did they play during the Medieval Period? What genres were there?</p>
+            <p>Adam: So, a very popular genre was called secular. What secular pretty much meant was non-religious. And that consisted of ballads such as heroic tales, romance tales, Arabian and Persian love songs, lyric poetry and song, things like that. And of course, dancing influenced music as well. Things such as line dancing and circle dancing were very popular at the time. And off course, religion was very—a very influential factor of music at the time. Of course, we have Christianity and Islam rising, and Christian music was—usually consisted of lyrical singing, as instruments were banned from Church music.</p>
+            <p>Eric: So just singing.</p>
+            <p>Adam: Yeah.</p>
+            <p>Eric: So how exactly was music notated?</p>
+            <p>Adam: So music—oh, here, I have a visual representation of a—</p>
+            <p>Eric: Thank you.</p>
+            <p>Adam: Yeah, there you go. So, as they are today, music was notated on, of course, paper, only back then, they were called neumes, and if you look at the paper, or the sheet, or the neume, I should say, you can really tell the differences.</p>
+            <p>Eric: So the things I notice right away is that there aren’t really any stems. There’s not really any kind of rhythm. They’re all like—</p>
+            <p>Adam: It’s all over the place, isn’t it?</p>
+            <p>Eric: Yeah, and there are only four lines instead of five.</p>
+            <p>Adam: So, yeah, again they were notated on a sheet called a neume.</p>
+            <p>Eric: So, how was music performed then?</p>
+            <p>Adam: So, music was performed, during the 15th century, usually in small groups, and these groups consisted of, usually three to five people in a small room playing either a harp, lute, or recorder, or whatever instrument was being played, in small outside bands, usually playing in front of a, you know, in towns and stuff like that. And of course you had music being played at weddings and things like that. Dance. You also had backup dancers accompanying bands and things like that. Next question?</p>
+            <p>Eric: All right. So, how did Medieval style music come to be?</p>
+            <p>Adam: Well, it’s very uncertain how it came to be. A lot of people say that it was very—well, it derived from Roman music in the 5th century. So, early medieval music, you can really—</p>
+            <p>Eric: So that’s when the Roman Empire fell?</p>
+            <p>Adam: Yeah, early 5th century Medieval music, you can really see that, or you can sense that influence of Roman culture in the music. And in the 8th and 10th centuries, Gregorian chanting, which was music organized by Pope Gregory I, was very popular at the time. It was also called plainsong, which because there was literally no music—or no musical instruments in the composition of the music. Parallel melodies develop, things like that. In the 11th to 13th centuries, of course we have the Crusades going on during this time, so they heavily influenced music. What they did, they brought back Eastern musical ideas.</p>
+            <p>Eric: Like Eastern songs?</p>
+            <p>Adam: Yeah. In the 12th century, we had polyphony, which meant independent melodies, and secular songs spread across Europe.</p>
+            <p>Eric: So this was going on during the Crusades?</p>
+            <p>Adam: Yeah. We also had troubadours, or trouveres, which were professional secular musicians, so composers and things like that. And of course, we had ars nova, which was—came right after ars antiqua, and ars nova just translates to “New Art.” It was a very distinct type of music at the time, and it developed into the Renaissance music.</p>
+            <p>Eric: All right. I’m Eric, and that was Adam. Thank you for listening to Swords and Spears! Be sure to tune in next week, where we’ll talk about Medieval weapons and battles.</p>
+            <p>Adam: Oh, thank you for having me on.</p>
+          </li>
+        </ul>
       </div>
       <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac enim tincidunt, porta nibh non, ullamcorper nibh. Curabitur eget interdum turpis, a vestibulum nunc. Mauris scelerisque sapien ligula, ut ultricies eros scelerisque pretium. In hac habitasse platea dictumst. Donec consequat sem sed erat tincidunt, et volutpat tortor tempus. Nullam ac est vitae tortor faucibus laoreet. Fusce a efficitur felis, et consectetur augue. Donec imperdiet ipsum a odio tempus, vel dapibus arcu pharetra. In et dui egestas, interdum magna ut, mattis lacus.</p>
