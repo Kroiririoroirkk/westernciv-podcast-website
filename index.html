@@ -11,7 +11,7 @@
         margin: 0 auto;
         border-bottom: 0.2em solid black;
       }
-      header::after {
+      header::after, article::after {
         content: "";
         clear: both;
         display: table;
@@ -41,6 +41,9 @@
         color: black;
         font: 1em Palatino, Baskerville, serif;
       }
+      p {
+        text-indent: 2em;
+      }
       .video {
         float: right;
         margin: 1em;
@@ -57,7 +60,7 @@
         margin-top: 2em;
         padding: 1em;
       }
-      .transcriptbutton::hover {
+      .transcriptbutton:hover {
         background-color: #3C0E00;
       }
       .transcript {
