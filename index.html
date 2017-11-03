@@ -2,6 +2,9 @@
 <html>
   <head>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
         background-color: #C1C3A5;
       }
@@ -16,7 +19,7 @@
         clear: both;
         display: table;
       }
-      h1, h2, h3 {
+      h1, h2, h3, h4 {
         text-align: center;
       }
       h1 {
@@ -30,12 +33,16 @@
         margin: 1em;
       }
       h2 {
-        color: #18120C;
+        color: #7E3900;
         font: bold 2.5em Palatino, Baskerville, serif;
       }
       h3 {
         color: black;
         font: italic 1.5em Palatino, Baskerville, serif;
+      }
+      h4 {
+        color: #881111;
+        font: bold small-caps 1.3em Palatino, Baskerville, serif;
       }
       div {
         color: black;
@@ -89,8 +96,8 @@
             </video>
           </li>
           <li>
-            <div class="transcriptbutton" onclick="transcript=document.getElementById('transcript1li'); if (transcript.style.display == 'none') {transcript.style.display = 'block';} else {transcript.style.display = 'none';}">
-              Show/Hide Transcript
+            <div class="transcriptbutton" onclick="transcript=document.getElementById('transcript1li'); if (transcript.style.display == 'none') {transcript.style.display = 'block'; this.innerHTML = 'Hide Transcript'} else {transcript.style.display = 'none'; this.innerHTML = 'Show Transcript'}">
+              Show Transcript
             </div>
           </li>
           <li id="transcript1li" style="display:none;">
@@ -136,11 +143,14 @@
         </ul>
       </div>
       <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac enim tincidunt, porta nibh non, ullamcorper nibh. Curabitur eget interdum turpis, a vestibulum nunc. Mauris scelerisque sapien ligula, ut ultricies eros scelerisque pretium. In hac habitasse platea dictumst. Donec consequat sem sed erat tincidunt, et volutpat tortor tempus. Nullam ac est vitae tortor faucibus laoreet. Fusce a efficitur felis, et consectetur augue. Donec imperdiet ipsum a odio tempus, vel dapibus arcu pharetra. In et dui egestas, interdum magna ut, mattis lacus.</p>
-        <p>Suspendisse non erat eu tortor dignissim posuere in quis lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sollicitudin sem eget enim laoreet mattis. Integer quis magna lobortis, porttitor ex eu, vehicula erat. Maecenas velit sapien, viverra non massa et, tempor hendrerit erat. Sed ac tortor gravida, lobortis nulla et, lacinia urna. Vivamus ornare rutrum posuere. Cras euismod tortor eget lorem vestibulum tristique. Vestibulum id leo viverra, consectetur velit sed, blandit mi. Mauris felis est, tempor eget venenatis vel, finibus lacinia enim. Sed quis fermentum mauris. Phasellus maximus odio a suscipit luctus. Curabitur eu convallis dolor. Quisque molestie dapibus nisi quis vulputate.</p>
-        <p>Sed quis nulla imperdiet purus facilisis mollis. Sed tempor dolor eu ornare iaculis. Duis ac dapibus turpis. Praesent porttitor, diam in malesuada placerat, ex tortor pharetra quam, sed feugiat risus justo quis turpis. Praesent ac nisi vel urna laoreet rhoncus sed eu orci. Proin eleifend augue a urna euismod luctus. Donec accumsan, mauris sed ullamcorper facilisis, mi est lobortis enim, sit amet pretium purus nisl sit amet ipsum.</p>
-        <p>Sed a metus urna. Nam ligula sapien, faucibus at lorem at, sodales mattis enim. In fringilla porta mi, eu vehicula lorem faucibus eget. Donec et cursus nisl. In vitae tempus velit. Nullam leo justo, ornare eu nisl gravida, rhoncus laoreet ligula. Donec finibus lectus magna, eget consectetur purus consectetur et.</p>
-        <p>In pellentesque ut est at malesuada. Suspendisse sed est justo. Phasellus non dui ut tellus sodales rutrum. Maecenas ullamcorper est ut turpis suscipit, et suscipit turpis blandit. Quisque venenatis lectus erat, eu elementum magna facilisis non. Fusce cursus non metus non hendrerit. Maecenas a facilisis enim.</p>
+        <h4>More Medieval Instruments</h4>
+        <p>There are many more Medieval instruments that Adam did not have time to talk about in the podcast. Among them is the <strong>gemshorn</strong>, which was a flute made out of the horn of an ox. It was used in early Hebrew ceremonies. The <strong>vielle</strong> was similar to a violin but had a deeper and longer body. In addition, it had three to five strings. The <strong>pipe</strong> and the <strong>tabor</strong> were usually played by the same person, the pipe being played by one hand and the tabor being played by the other. The pipe was similar to a recorder but only had three holes. The tabor was a type of drum. As well as the lute and the harp, the <strong>harpsichord</strong> and the <strong>bagpipe</strong> were other familiar instruments used in Medieval times.</p>
+        <h4>Medieval Style</h4>
+        <p>Part of the unique Medieval style comes from the performances. Of course, the <em>instruments</em> played a large part in the sound of Medieval pieces. Medieval pieces were played by <em>small groups</em>, as Adam said, and this contributed to the tavern-like feeling of the music. Instuments accompanied voices at unison or octave for decoration. <strong>Polyphony</strong> was in wide use, with each instrument playing a different melody, in contrast to the modern style of <strong>homophony</strong>, a melody over an accompaniment. <em>Parallel fifths</em> and <em>unconventional harmony</em> were other important parts of the Medieval style. Many pieces were in the <em>Dorian</em> mode, as opposed to the common <em>Ionian</em> mode used in pieces today. However, an important thing to keep in mind is that there is a difference between the music of the <strong>Medieval</strong> and <strong>Renaissance</strong> periods, which are often associated.</p>
+        <h4>More on the history of Medieval music</h4>
+        <p>After the <strong>ars antiqua</strong> period of 13th century France came the <strong>ars nova</strong> period of 14th century France, "New Art." There was a flourishing of polyphonic music during this time, as well as developments in rhythmic notation. It should be noted that the <strong>Italian ars nova</strong> is different than that of the French. The Italian ars nova is another term for <strong>Italian trecento (1300) music</strong>, the period of flourishing for Italian music, which extends from the 1300s to 1420. It was largely brought about by the beginnings of <strong>troubadours</strong>, or people who played secular music for a living. After the ars nova came <strong>ars subtilior</strong>, "Subtle Art." The music of the ars subtilior style was rhythmically and notationally complex and was hard to sing. They had very subtle nuances, in direct contrast to ars nova music. The music of the <strong>Renaissance</strong> came about with the rise of <strong>humanism</strong>, the view of humans as the center of the universe, with the polyphony of ars nova and the subtleness of ars subtilior carrying on into future centuries.</p>
+        <h4>Backstage</h4>
+        <p>Adam refuses to say the word troubadour ever again.</p>
       </div>
     </article>
   </body>
